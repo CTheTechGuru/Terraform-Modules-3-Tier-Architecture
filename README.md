@@ -10,6 +10,8 @@
 
 <!-- PROJECT Details-->
 # About The Project
+We will use terraform modules to provision an AWS account VPC with all of its networking components via code. The beauty of terraform modules is that we are able to use modules to create the same resources on demand. 
+We will use Studio visual code as our IDE to write the code 
 
 
 #### Overview:
@@ -19,21 +21,28 @@
  # Prerequisites
 
 
-* Basic understanding of Computer Networks.
-* Basic understanding of TCP/IP.
-* Basic understanding of virtualization.
+* Basic understanding of AWS and Terraform.
+* 
+* 
 * Access to AWS (Free Tier or Paid)
-* _Best Practice_ Create AWS user account with administrator access.(enable MFA on lab account)
+* Create AWS user account named terraform save secret / access keys administrator access.(enable MFA on lab account)
 * Download Putty and Pageant
 
 ##  
 
-### 1. 
+### 1. Terraform Directory Configuration
 
-*
-*
-*
-*
+* Create a folder for your terraform project.
+* From studio visual code choose file open folder. 
+* Within the 'terraform project folder' create a folder name modules.
+* Inside the modules folder create a folder named vpc.
+* Inside the vpc folder create 3 files.
+* 
+ 1. main.tf -Contains code
+ 2. outputs.tf - Exports value reference in another module.
+ 3. variables.tf -Contains variables
+
+
 
 
 
