@@ -2,7 +2,7 @@
 
 <h1 align="center">AWS | Terraform Module 3 Tier Architecture Project</h3>
 
-![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/C%20Diagram%20-%20Page%201(1).png?raw=true)
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/8.jpg)
 
 
 
