@@ -18,19 +18,19 @@ We will use Studio visual code as our IDE to write the code
 
 
 
- # Prerequisites
+## Prerequisites
 
 
-* Basic understanding of AWS and Terraform.
-* 
+* Basic understanding of AWS Services
+* Experience with Studio Visual Code
 * 
 * Access to AWS (Free Tier or Paid)
 * Create AWS user account named terraform save secret / access keys administrator access.(enable MFA on lab account)
-* Download Putty and Pageant
+* 
 
-##  
 
-### 1. Terraform Directory Configuration
+
+### 1. Terraform Directory/File Configuration
 
 * Create a folder for your terraform project.
 * From studio visual code choose file open folder. 
@@ -38,9 +38,10 @@ We will use Studio visual code as our IDE to write the code
 * Inside the modules folder create a folder named vpc.
 * Inside the vpc folder create 3 files.
 * 
+ 
  1. main.tf -Contains code
  2. outputs.tf - Exports value reference in another module.
- 3. variables.tf -Contains variables
+ 3. variables.tf - Contains variables
 
 
 
