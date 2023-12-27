@@ -94,6 +94,7 @@ var.vpc_cidr
 1. Create VPC
 
 For the cidr_block argument enter the variable created for the cidr. 
+
 To call the variable again we will put var.vpc_cidr
 For instance_tenancy we will put "default" for value.
 To enable dns hostname enter true.
@@ -136,13 +137,32 @@ Your code should look like this.
 
  ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Public%20Subnets.PNG)
 
-5. Create Route Table
+4. Create Route Table & Add Public Route
 
-![](  
+Add the vpc_id - aws_vpc.vpc.id
+For our cidr_block we want all access so we will enter "0.0.0.0/0"
+For the gateway id use the resource and name from our igw "aws_internet_gateway" "internet_gateway"
 
-5. Public Subnet Association
 
-![](
+``` aws_internet_gateway.internet_gateway.id```
+
+tag name will be "public route table"
+
+
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Public%20Route.PNG)
+
+5. Public Subnet Associations AZ1/AZ2
+We will use the resource type and name for the subnet id's to public subnet 1 and 2. ``` resource "aws_subnet" "public_subnet_az1" ``` aws_subnet.public_subnet_az1.id
+We will also enter the resource name and type id for the route table id. ``` "aws_route_table" "public_route_table" ``` aws_route_table.public_route_table.id
+
+_Repeat for AZ2_
+
+Code should look similar to this.
+
+
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Public%20Route%20association.PNG)
 
 6. Private Subnets
 
