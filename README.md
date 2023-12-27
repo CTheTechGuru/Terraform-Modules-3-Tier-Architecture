@@ -57,10 +57,13 @@ We will use Studio visual code as our IDE to write the code
 
 
 
-### 2. 
 
-*
-*
+### 2. Create VPC
+
+* Next open the vpc reference file and copy its contents to the main.tf file. This contains the resources needed to create the VPC.
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/VPC%20Resource%20Snapshot.PNG)
+
 *
 *
 *
