@@ -164,13 +164,50 @@ Code should look similar to this.
 
 ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Public%20Route%20association.PNG)
 
-6. Private Subnets
+6. Private App/Data Subnets
+Our private subnets will have the same as our public subnets except map on launch due to it being a private subnet we do not need on launch.
+The following arguments are what correspond to each subnet. Ensure to use the correct index for the AZs
+```
+vpc_id = aws_vpc.vpc.id
+cidr_block = var.private_app_subnet_az1_cidr
+avaliability_zone = data.aws_availability_zones.avaliable_zones.names[0]
+map_public_ip_on_launch = false
 
-![](
+tags Name = "private app subnet az1"
 
-## 4.
+vpc_id = aws_vpc.vpc.id
+cidr_block = var.private_app_subnet_az2_cidr
+avaliability_zone = data.aws_availability_zones.avaliable_zones.names[1]
+map_public_ip_on_launch = false
 
-*
+tags Name = "private app subnet az2"
+
+vpc_id = aws_vpc.vpc.id
+cidr_block = var.private_data_subnet_az1_cidr
+avaliability_zone = data.aws_availability_zones.avaliable_zones.names[0]
+map_public_ip_on_launch = false
+
+tags Name = "private data subnet az1"
+
+vpc_id = aws_vpc.vpc.id
+cidr_block = var.private_data_subnet_az2_cidr
+avaliability_zone = data.aws_availability_zones.avaliable_zones.names[1]
+map_public_ip_on_launch = false
+
+tags Name = "private data subnet az2"
+```
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Private%20App%20subnet.PNG)
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Private%20data%20Subnet.PNG)
+
+## 4. Create Terraform outputs for our VPC
+
+* Select the outputs.tf folder.
+* We will enter our outputs for each of our variables and associate the value for the output file.
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/assets/125163096/ab6d30e3-1c03-4667-a500-9b0a73247c21)
+
 *
 *
 *
