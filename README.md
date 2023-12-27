@@ -23,10 +23,9 @@ We will use Studio visual code as our IDE to write the code
 
 * Basic understanding of AWS Services
 * Experience with Studio Visual Code
-* 
 * Access to AWS (Free Tier or Paid)
 * Create AWS user account named terraform save secret / access keys administrator access.(enable MFA on lab account)
-* 
+* Dedicated terminal basic commands
 
 
 
@@ -37,11 +36,13 @@ We will use Studio visual code as our IDE to write the code
 * Within the 'terraform project folder' create a folder name modules.
 * Inside the modules folder create a folder named vpc.
 * Inside the vpc folder create 3 files.
-* 
+
  
- 1. main.tf -Contains code
- 2. outputs.tf - Exports value reference in another module.
- 3. variables.tf - Contains variables
+ 1. main.tf - Contains code.
+ 2. outputs.tf - Exports value to reference in another module.
+ 3. variables.tf - Contains variables.
+
+#### Example -
 
 
 
