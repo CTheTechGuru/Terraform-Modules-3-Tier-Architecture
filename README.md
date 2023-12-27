@@ -21,11 +21,12 @@ We will use Studio visual code as our IDE to write the code
 ## Prerequisites
 
 
-* Basic understanding of AWS Services
-* Experience with Studio Visual Code
+* Basic understanding of AWS Services.
+* Experience with Studio Visual Code.
 * Access to AWS (Free Tier or Paid)
 * Create AWS user account named terraform save secret / access keys administrator access.(enable MFA on lab account)
-* Dedicated terminal basic commands
+* Dedicated terminal basic commands.
+* Download reference files. ![VPC Reference File](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/vpc_reference.tf) ![S3 Backend File](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/s3_backend_reference.tf)
 
 
 
