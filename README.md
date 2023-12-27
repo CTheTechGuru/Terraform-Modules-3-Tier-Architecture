@@ -38,11 +38,12 @@ We will use Studio visual code as our IDE to write the code
 * Inside the vpc folder create 3 files.
 
  
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Modules%20Snapshot.PNG)
+
  1. main.tf - Contains code.
  2. outputs.tf - Exports value to reference in another module.
  3. variables.tf - Contains variables.
 
-#### Example -
 
 
 
