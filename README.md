@@ -58,16 +58,21 @@ We will use Studio visual code as our IDE to write the code
 
 
 
-### 2. Create VPC
+### 2. Create VPC variables in the variables.tf file under modules/vpc.
 
-* Next open the vpc reference file and copy its contents to the main.tf file. This contains the resources needed to create the VPC.
+* Copy the following code and paste into the variables.tf file and save.
 
-![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/VPC%20Resource%20Snapshot.PNG)
-
-*
-*
-*
-
+```
+variable "region" {}
+variable "project_name" {}
+variable "vpc_cidr" {}
+variable "public_subnet_az1_cidr" {}
+variable "public_subnet_az2_cidr" {}
+variable "private_app_subnet_az1_cidr" {}
+variable "private_app_subnet_az2_cidr" {}
+variable "private_data_subnet_az1_cidr" {}
+variable "private_data_subnet_az2_cidr" {}
+```
   
 
   
