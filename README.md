@@ -60,6 +60,7 @@ We will use Studio visual code as our IDE to write the code
 
 ### 2. Create VPC variables in the variables.tf file under modules/vpc.
 
+* In order for us to specify values and arguments, we need to create variables.
 * Copy the following code and paste into the variables.tf file and save.
 
 ```
@@ -77,15 +78,56 @@ variable "private_data_subnet_az2_cidr" {}
 
   
 
-### 3.
+### 3. Create reference variables
 
-*
-*
-*
-*
-*
+* To reference our variables we will type var. then the name of the variable in quotations in our variables.tf file.
+
+Example -
+
+```
+var.region
+var.project_name
+var.vpc_cidr
+```
 
 
+1. Create VPC
+
+For the cidr_block argument enter the variable created for the cidr. 
+
+To call the variable again we will put var.vpc_cidr
+For instance_tenancy we will put "default" for value.
+To enable dns hostname enter true.
+
+For the tags name value enter var.project_name in the brackets to reference our project name. Your code should look like this. 
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Create%20VPC.PNG)
+
+2. Create IGW
+
+The first argument to enter will be our vpc id.
+The value is our resource type and name of our vpc. Which is "aws_vpc" "vpc".
+We will remove the double quotes and add .id at the end. 
+under tags enter var.project_name
+Your code should look like this. 
+
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Create%20IGW.PNG)
+
+3. Create Public Subnets
+
+![](
+
+4. Create Route Table
+
+![](  
+
+5. Public Subnet Association
+
+![](
+
+6. Private Subnets
+
+![](
 
 ## 4.
 
