@@ -94,14 +94,13 @@ var.vpc_cidr
 1. Create VPC
 
 For the cidr_block argument enter the variable created for the cidr. 
-
 To call the variable again we will put var.vpc_cidr
 For instance_tenancy we will put "default" for value.
 To enable dns hostname enter true.
 
 For the tags name value enter var.project_name in the brackets to reference our project name. Your code should look like this. 
 
-![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Create%20VPC.PNG)
+ ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Create%20VPC.PNG)
 
 2. Create IGW
 
@@ -111,13 +110,33 @@ We will remove the double quotes and add .id at the end.
 under tags enter var.project_name
 Your code should look like this. 
 
-![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Create%20IGW.PNG)
+ ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Create%20IGW.PNG)
 
-3. Create Public Subnets
+3. Create Public Subnets AZ1/AZ2
 
-![](
+We will enter our vpc_id again like previously, aws_vpc.vpc.id
 
-4. Create Route Table
+For the availability zone argument we will use the resource and name from data "availibility_zones" avaliable_zones"
+
+Enter - data.aws_availability_zones.availibility_zones.name[0]
+
+```this index references the first AZ due to indexing 1 is the second, so forth so on. ```
+
+For cidr_block enter the variable created for public subnet az1 cidr. 
+
+```var.public_subnet_az1_cidr```
+
+map_public_ip_on_launch = true
+
+For our tag name we will give it "public subnet az1"
+
+_REPEAT FOR PUBLIC SUBNET 2 WITH THE CORRESPONDING ARGUMENTS. INDEX 1 FOR THE SECOND AZ._
+
+Your code should look like this.
+
+ ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Public%20Subnets.PNG)
+
+5. Create Route Table
 
 ![](  
 
