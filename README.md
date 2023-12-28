@@ -251,7 +251,7 @@ tags Name = "private data subnet az2"
 
  ![S3 State File Example](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/S3%20State%20file.png?raw=true)
  
-* Make sure to save file.
+* Save file.
 
 
 ## 7. We will now create the variables for our project folder. 
@@ -294,25 +294,41 @@ provider "aws" {
  
 
 * Next under the configure provider syntax we will create our vpc. _for source enther the path of the modules/vpc folder._
-* List all the variables in the variable file. 
-create vpc
+* List all the variables in the variable file and enter the value for the arguments which would be var.(the name of the varable)
+
+
+``` Example - region = var.region ```
+
+
+Create vpc
+
 ```
 module "vpc" {
- source = "../modules/vpc"
- 
+  source                       = "../modules/vpc"
+  region                       = var.region
+  project_name                 = var.project_name
+  vpc_cidr                     = var.vpc_cidr
+  public_subnet_az1_cidr       = var.public_subnet_az1_cidr
+  public_subnet_az2_cidr       = var.public_subnet_az2_cidr
+  private_app_subnet_az1_cidr  = var.private_app_subnet_az1_cidr
+  private_app_subnet_az2_cidr  = var.private_app_subnet_az2_cidr
+  private_data_subnet_az1_cidr = var.private_data_subnet_az1_cidr
+  private_data_subnet_az2_cidr = var.private_data_subnet_az2_cidr
 }
 
-
+```
+* Review make sure everything entered correctly. Save File. 
 
   
  
-## 9. 
+## 9. Open the terraform.tfvars file, This is where we enter the values for our variables.
 
-*
-*
-*
-*
-*
+
+* Enter all the variables from the variables.tf file to the tfvars file.
+
+* Make sure theres no space after the equal sign.
+
+* Your code should look like the code below. 
 
 
 
