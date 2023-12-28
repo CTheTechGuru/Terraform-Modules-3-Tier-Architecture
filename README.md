@@ -1,6 +1,6 @@
- 🚀💻 Terraform-Module-3-Tier-Architecture 🚀💻
 
-<h1 align="center">AWS | Terraform Module 3 Tier Architecture Project</h3>
+
+<h1 align="center"> 🚀💻 AWS | Terraform Module 3 Tier Architecture Project 🚀💻 </h3>
 
 ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/8.jpg)
 
