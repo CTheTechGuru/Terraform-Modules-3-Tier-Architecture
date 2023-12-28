@@ -1,4 +1,4 @@
- Terraform-Module-3-Tier-Architecture
+ 🚀💻 Terraform-Module-3-Tier-Architecture 🚀💻
 
 <h1 align="center">AWS | Terraform Module 3 Tier Architecture Project</h3>
 
@@ -405,7 +405,11 @@ _This command will expose any errors within your files so if you recieve an erro
 
 <h1 align="center">Summary</h3>
 
+Terraform 3 Tier AWS VPC Architecture: Modular, Secure, and Scalable Infrastructure
 
+In our recent VPC project, we harnessed the power of Terraform to streamline and automate the deployment of a modular VPC architecture. Organizing our code into a Terraform module within the project folder, we encapsulated key VPC components for enhanced reusability and maintenance. Leveraging variables and an AWS provider setup in the main.tf file, we orchestrated the creation of the VPC. To maintain state consistency, we opted for Amazon S3 to host our Terraform state file. Enhancing security, we created a dedicated user for the Terraform project, authenticating via access and secret keys. The project's configuration details were neatly organized in a tvars file for easy management. This approach not only provided scalability and automation but also established a secure and well-documented foundation for our cloud infrastructure. 
+
+🚀💻 #Terraform #VPCDeployment #CloudAutomation #InfrastructureAsCode
 
 
 
