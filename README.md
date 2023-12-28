@@ -33,8 +33,10 @@ We will use Studio visual code as our IDE to write the code
 
 
 
-## 1. Use aws configure to securely access AWS account within the cli
+## 1. Setup AWS configure
 
+* aws configure allows us to hide our credentials on our local machine without needing to use within our code.
+  
 * In a terminal enter ``` aws configure ``` into the shell.
 
 You will need to enter the following 
