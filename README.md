@@ -249,24 +249,59 @@ tags Name = "private data subnet az2"
 * For region enter your region, mines is us-east-1.
 * For the profile enter the AWS user which you have configured in your AWS console with the Secret/Access Keys.
 
-![S3 State File Example](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/S3%20State%20file.png?raw=true)
-
-
-## 7. 
+ ![S3 State File Example](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/S3%20State%20file.png?raw=true)
  
-*
-*
-*
-*
+* Make sure to save file.
 
 
-## 8. 
+## 7. We will now create the variables for our project folder. 
+ 
+* Copy all the variables from your modules/vpc folder into your project variables.tf file. 
 
-*
-*
-*
-*
-*
+
+```
+variable "region" {}
+variable "project_name" {}
+variable "vpc_cidr" {}
+variable "public_subnet_az1_cidr" {}
+variable "public_subnet_az2_cidr" {}
+variable "private_app_subnet_az1_cidr" {}
+variable "private_app_subnet_az2_cidr" {}
+variable "private_data_subnet_az1_cidr" {}
+variable "private_data_subnet_az2_cidr" {}
+```
+
+* Save file.
+
+
+
+## 8. Authenticate with provider and reference VPC Module in main.tf file
+
+* The purpopse of the main.tf file is to reference the vpc module folder and authenticate to our provider. 
+
+
+* First we will authenticate provider enter the variable for region from your variables.tf file and enter the profile name.
+  _Open the variables.tf file in a side panel to reference as we enter the variables and their arguments in the main.tf file._
+
+configure aws provider - Enter your profile name in for the profile argument. 
+```
+provider "aws" {
+ region  = var.region
+ profile = "Terraform"
+}
+
+```
+ 
+
+* Next under the configure provider syntax we will create our vpc. _for source enther the path of the modules/vpc folder._
+* List all the variables in the variable file. 
+create vpc
+```
+module "vpc" {
+ source = "../modules/vpc"
+ 
+}
+
 
 
   
