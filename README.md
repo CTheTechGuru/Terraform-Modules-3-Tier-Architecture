@@ -47,7 +47,7 @@ Default output format
 
 Your output should look similar to this. 
 
-![](
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/aws%20configure.png)
 
 
 
@@ -61,7 +61,7 @@ Your output should look similar to this.
 
 
 
-### 1. Terraform Directory/File Configuration
+### 2. Terraform Directory/File Configuration
 
 * Create a folder for your terraform project.
 * From studio visual code choose file open folder. 
@@ -89,7 +89,7 @@ Your output should look similar to this.
 
 
 
-### 2. Create VPC variables in the variables.tf file under modules/vpc.
+### 3. Create VPC variables in the variables.tf file under modules/vpc.
 
 * In order for us to specify values and arguments, we need to create variables.
 * Copy the following code and paste into the variables.tf file and save.
