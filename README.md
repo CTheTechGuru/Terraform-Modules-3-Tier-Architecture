@@ -329,7 +329,7 @@ module "vpc" {
 * Make sure theres no space after the equal sign.
 
 * Your code should look like the code below. 
-
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/TFvars.png)
 
 
 
