@@ -33,7 +33,7 @@ We will use Studio visual code as our IDE to write the code
 
 
 
-### 1. Use aws configure to securely access AWS account within the cli
+## 1. Use aws configure to securely access AWS account within the cli
 
 * In a terminal enter ``` aws configure ``` into the shell.
 
@@ -61,7 +61,7 @@ Your output should look similar to this.
 
 
 
-### 2. Terraform Directory/File Configuration
+## 2. Terraform Directory/File Configuration
 
 * Create a folder for your terraform project.
 * From studio visual code choose file open folder. 
@@ -89,7 +89,7 @@ Your output should look similar to this.
 
 
 
-### 3. Create VPC variables in the variables.tf file under modules/vpc.
+## 3. Create VPC variables in the variables.tf file under modules/vpc.
 
 * In order for us to specify values and arguments, we need to create variables.
 * Copy the following code and paste into the variables.tf file and save.
@@ -109,7 +109,7 @@ variable "private_data_subnet_az2_cidr" {}
 
   
 
-### 3. Create reference variables
+## 4. Create reference variables
 
 * To reference our variables we will type var. then the name of the variable in quotations in our variables.tf file.
 
@@ -232,7 +232,7 @@ tags Name = "private data subnet az2"
 
 ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Private%20data%20Subnet.PNG)
 
-## 4. Create Terraform outputs for our VPC
+## 5. Create Terraform outputs for our VPC
 
 * Select the outputs.tf folder.
 * We will enter our outputs for each of our variables and associate the value for the output file.
@@ -243,7 +243,7 @@ tags Name = "private data subnet az2"
 
 
  
-## 5. Create Project Folder 
+## 6. Create Project Folder 
 
 * Create New Folder outside of the module folder. We will reference the module/vpc folder for our project.
   
@@ -257,7 +257,7 @@ tags Name = "private data subnet az2"
 
 
 
-## 6. Create S3 bucket to store terraform state file
+## 7. Create S3 bucket to store terraform state file
 
 
 * Open AWS Management console and go to Amazon S3 Service.
@@ -285,7 +285,7 @@ tags Name = "private data subnet az2"
 * Save file.
 
 
-## 7. We will now create the variables for our project folder. 
+## 8. We will now create the variables for our project folder. 
  
 * Copy all the variables from your modules/vpc folder into your project variables.tf file. 
 
@@ -306,7 +306,7 @@ variable "private_data_subnet_az2_cidr" {}
 
 
 
-## 8. Authenticate with provider and reference VPC Module in main.tf file
+## 9. Authenticate with provider and reference VPC Module in main.tf file
 
 * The purpopse of the main.tf file is to reference the vpc module folder and authenticate to our provider. 
 
@@ -352,7 +352,7 @@ module "vpc" {
 
   
  
-## 9. Open the terraform.tfvars file, This is where we enter the values for our variables.
+## 10. Open the terraform.tfvars file, This is where we enter the values for our variables.
 
 
 * Enter all the variables from the variables.tf file to the tfvars file.
