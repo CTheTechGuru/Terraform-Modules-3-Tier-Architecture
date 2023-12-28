@@ -10,8 +10,7 @@
 
 <!-- PROJECT Details-->
 # About The Project
-We will use terraform modules to provision an AWS account VPC with all of its networking components via code. The beauty of terraform modules is that we are able to use modules to create the same resources on demand. 
-We will use Studio visual code as our IDE to write the code 
+We will use terraform modules to provision an AWS account VPC with all of its networking components via code. The beauty of terraform modules is that we are able to create the aws resources on demand via code.  We will use Studio visual code as our IDE. The prerquisiates are imperative as far as following along to execute an error free lab. 
 
 
 #### Overview:
