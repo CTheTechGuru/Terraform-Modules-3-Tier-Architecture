@@ -368,17 +368,42 @@ module "vpc" {
 
 
  
-## 10.
+## 10. Create the VPC in our AWS environment
 
-*
-*
-*
-*
-*
-*
+* Right click the project folder in studio visual code and choose open in integrated termnal. 
+* Check to ensure the path is your project folder. 
+* Now we will initialize our aws environment.
+ 
+* enter ``` terraform init ``` into the shell.
+  
+* your output should look like this.
+  
+ ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Terraform%20init.png)
 
+* Now to create the vpc enter ``` terraform apply ```
 
+_This command will expose any errors within your files so if you recieve an error go to the appropriate lines and modify any changes_
+
+ Your output should look similar to below. 
+
+ ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Terraform%20apply.png)
+
+## 11. Verify Infrastructure 
+
+* Log into the aws console and go to the VPC dashboard.
+
+* All of your subnets should appear similar to below.
+
+  ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/VPC%20Subnets.PNG)
+
+## 12. Clean-up AWS environment
+
+* Now go back studio visual code and enter terraform destroy in the cli.
+* This will remove all the vpc components and revert the aws environment to the previous state before our IAC provisioning.
+
+  
 <h1 align="center">Summary</h3>
+
 
 
 
