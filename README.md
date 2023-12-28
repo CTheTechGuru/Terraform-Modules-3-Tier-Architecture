@@ -1,6 +1,6 @@
 
 
-<h1 align="center"> 🚀 💻 :cloud: AWS | Terraform Module 3 Tier Architecture Project:cloud: 🚀 💻 </h3>
+<h1 align="center"> 💻 🚀 :cloud: AWS | Terraform Module 3 Tier Architecture Project 🚀 💻 :cloud: </h3>
 
 ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/8.jpg)
 
