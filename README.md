@@ -401,7 +401,9 @@ _This command will expose any errors within your files so if you recieve an erro
 * Now go back studio visual code and enter terraform destroy in the cli.
 * This will remove all the vpc components and revert the aws environment to the previous state before our IAC provisioning.
 
-  
+![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Terraform%20destroy.png)
+
+
 <h1 align="center">Summary</h3>
 
 
