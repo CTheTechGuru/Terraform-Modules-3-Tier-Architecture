@@ -23,10 +23,41 @@ We will use Studio visual code as our IDE to write the code
 
 * Basic understanding of AWS Services.
 * Experience with Studio Visual Code.
+* Download aws configure for your current OS. 
 * Access to AWS (Free Tier or Paid)
-* Create AWS user account named terraform save secret / access keys administrator access.(enable MFA on lab account)
+* _IMPORTANT_ Create AWS user account named terraform save secret / access keys administrator access.(enable MFA on lab account)
 * Dedicated terminal basic commands.
 * Download reference files. ![VPC Reference File](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/vpc_reference.tf) ![S3 Backend File](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/s3_backend_reference.tf)
+
+
+
+
+
+### 1. Use aws configure to securely access AWS account within the cli
+
+* In a terminal enter ``` aws configure ``` into the shell.
+
+You will need to enter the following 
+```
+AWS Access Key ID
+AWS Secret Access Key
+Default region name
+Default output format
+```
+
+Your output should look similar to this. 
+
+![](
+
+
+
+
+
+
+
+
+
+
 
 
 
