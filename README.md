@@ -208,34 +208,48 @@ tags Name = "private data subnet az2"
 
 ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/assets/125163096/ab6d30e3-1c03-4667-a500-9b0a73247c21)
 
-*
-*
-*
-*
+
 
 
  
-## 5.
+## 5. Create Project Folder 
 
-*
-*
-*
-*
-*
-*
+* Create New Folder outside of the module folder. We will reference the module/vpc folder for our project.
+  
+* My folder name is TF Project, in there I will create backend.tf main.tf terraform.tfvars and variables.tf files, we will use these files to create our project. 
+
+ ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/Project%20Folder.png) 
+ 
+ _Disregard the .terraform hidden file and the lockfile, we will create in the next step._
 
 
 
 
-## 6.  
 
-*
-*
-*
-*
-*
-*
-*
+## 6. Create S3 bucket to store terraform state file
+
+
+* Open AWS Management console and go to Amazon S3 Service.
+  
+  ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/S3%20Service.PNG)
+
+* Click create bucket.
+
+  
+* Create unique name for your bucket. Choose the region for your bucket, and select Enable versioning. 
+
+  ![](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/S3%20Bucket%20Options.PNG)
+
+* Now that our bucket is created we will create our configuration backend that will store our state file in our bucket.
+
+* Copy and paste the code from ![S3 Backend File](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/s3_backend_reference.tf) to your backend.tf file.
+  
+* For the bucket variable we will enter the name we created for our S3 bucket created.
+* For the key name it the same as the project.
+* For region enter your region, mines is us-east-1.
+* For the profile enter the AWS user which you have configured in your AWS console with the Secret/Access Keys.
+
+![S3 State File Example](https://github.com/CTheTechGuru/Terraform-Modules-3-Tier-Architecture/blob/main/Images/S3%20State%20file.png?raw=true)
 
 
 ## 7. 
